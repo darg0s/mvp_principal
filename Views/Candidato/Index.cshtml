@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Dados Pessoais";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form-group ">
+    <label for="endereco">Endereço</label>
+    <input type="text" class="form-control" id="endereco" placeholder="Rua ">
+  </div>
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="numero">Numero</label>
+    <input type="text" class="form-control" id="numero" placeholder="101">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="complemento">Complemento</label>
+    <input type="text" class="form-control" id="complemento" placeholder="Apt, Sala">
+  </div>
+
+</div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+     <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="cep">CEP</label>
+      <input type="text" class="form-control" id="cep">
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                candidato id
+            </th>
+            <th>
+                nome do candidato
+            </th>
+            <th>
+                estado civil
+            </th>
+            <th>
+                genero
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var candidato in (List<Candidato>)ViewBag.Candidatos) {
+        <tr>
+            <td>
+                @candidato.CandidatoId
+            </td>
+            <td>
+                @candidato.NomeCandidato
+            </td>
+            <td>
+                @candidato.estado_civil
+            </td>
+            <td>
+                @candidato.genero
+            </td>
+        </tr>
+}
+
+    </tbody>
+</table>
