@@ -3,30 +3,75 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<form>
+<form id="formularioCandidato">
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email">
+    <div class="form-group col-md-7">
+      <label for="nome">Nome Completo</label>
+      <input type="text" class="form-control" id="nome" placeholder="Andre Carlos Souza e Silva">
+      <small class="form-tex text-muted">* Campo obrigadotrio. </small>
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
+
+    <div class="form-group col-md-5">
+      <label for="vaga">Vaga Selecionada</label>
+      <input type="text" class="form-control" id="vaga">      
+    </div> 
+
   </div>
 
-  <div class="form-group ">
-    <label for="endereco">Endereço</label>
-    <input type="text" class="form-control" id="endereco" placeholder="Rua ">
+    
+
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="dataNascimento">Data de nascimento</label>
+      <input type="text" class="form-control" id="dataNascimento" placeholder="__/__/____">
+    </div>
+
+     <div class="form-group col-md-4">
+      <label for="estadoCivil">Estado Civil</label>
+      <input type="text" class="form-control" id="estadoCivil" placeholder="Casado">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="sexo">Sexo</label>
+      <input type="text" class="form-control" id="sexo" placeholder="Feminino">
+    </div>
+
+
+
+
   </div>
+
+
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<h1> Endereço</h1>
+
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="cep">CEP</label>
+      <input type="text" class="form-control" id="cep">
+    </div>
+
+  </div>
+
+ 
 
 <div class="form-row">
-  <div class="form-group col-md-6">
+   <div class="form-group col-md-7">
+    <label for="endereco">Endereço</label>
+    <input type="text" class="form-control" id="endereco" placeholder="Rua paraiso">
+  </div>
+
+  <div class="form-group col-md-2">
     <label for="numero">Numero</label>
     <input type="text" class="form-control" id="numero" placeholder="101">
   </div>
 
-  <div class="form-group col-md-6">
+  <div class="form-group col-md-3">
     <label for="complemento">Complemento</label>
     <input type="text" class="form-control" id="complemento" placeholder="Apt, Sala">
   </div>
@@ -34,21 +79,83 @@
 </div>
 
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
     <div class="form-group col-md-4">
-     <label for="estado">Estado</label>
-      <input type="text" class="form-control" id="estado">
+      <label for="bairro">Bairro</label>
+      <input type="text" class="form-control" id="bairro" placeholder="Centro">
     </div>
+
+    <div class="form-group col-md-6">
+      <label for="cidade">Cidade</label>
+      <input type="text" class="form-control" id="cidade" placeholder="Belo Horizonte">
+    </div>
+
     <div class="form-group col-md-2">
-      <label for="cep">CEP</label>
-      <input type="text" class="form-control" id="cep">
+     <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado" placeholder="MG">
     </div>
+    
   </div>
+
+  <h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<h1> Documentos</h1>
+
+<div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <label for="rg">Identidade</label>
+      <input type="text" class="form-control" id="rg" placeholder="9654725">
+    </div>
+    
+    <div class="form-group col-md-2">
+     <label for="veiculo">Possui Veículo</label>
+      <input type="text" class="form-control" id="veiculo" placeholder="Carro">
+
+    </div><div class="form-group col-md-2">
+     <label for="habilitacao">Tipo da Habilitação</label>
+      <input type="text" class="form-control" id="habilitacao" placeholder="C">
+    </div>
+    
+  </div>
+
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<h1> Contatos</h1>
+
+<div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="telCelular">Telefone Celular</label>
+      <input type="text" class="form-control" id="telCelular" placeholder=>
+    </div>
+
+
+    <div class="form-group col-md-3">
+      <label for="telFixo">Telefone Fixo</label>
+      <input type="text" class="form-control" id="telFixo" placeholder=>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com">
+    </div>
+    
+  </div>
+
+
+
   
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit " class="btn btn-primary">Cadastrar</button>
 </form>
 
 

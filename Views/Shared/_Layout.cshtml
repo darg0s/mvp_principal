@@ -8,7 +8,8 @@
    
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body id="teste">
+    
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#23bce7">
             <div class="container">
@@ -23,11 +24,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Candidato" asp-action="Index">Candidato</a>
-                        </li>
-                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Vagas" asp-action="Index">Vagas</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Candidato" asp-action="Index">Candidato</a>
+                        </li>
+                         
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -41,7 +43,7 @@
             @RenderBody()
         </main>
     </div>
-
+    
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - Todos Direitos Reservados - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
