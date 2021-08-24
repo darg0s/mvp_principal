@@ -7154,11 +7154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Aplicação-mvc-Principal\\Aplicação-mvc-Principal.csproj",
+      "projectUniqueName": "D:\\Git\\Aplicação-mvc-Principal - Copia\\Aplicação-mvc-Principal.csproj",
       "projectName": "Aplicação-mvc-Principal",
-      "projectPath": "D:\\Git\\Aplicação-mvc-Principal\\Aplicação-mvc-Principal.csproj",
+      "projectPath": "D:\\Git\\Aplicação-mvc-Principal - Copia\\Aplicação-mvc-Principal.csproj",
       "packagesPath": "C:\\Users\\Luiz\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Aplicação-mvc-Principal\\obj\\",
+      "outputPath": "D:\\Git\\Aplicação-mvc-Principal - Copia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luiz\\AppData\\Roaming\\NuGet\\NuGet.Config",

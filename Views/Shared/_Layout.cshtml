@@ -1,9 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
+
+  @RenderSection("head", required: false)
+
+</head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - JobsNet</title>
+    <title>@ViewData["Home"]  JobsNet</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
    
     <link rel="stylesheet" href="~/css/site.css" />
@@ -11,9 +16,9 @@
 <body id="teste">
     
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#23bce7">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#ffad67">
             <div class="container">
-                <a class="navbar-brand h1 mb-0 " >JobsNet</a>
+                <a class="display-4" >JobsNet</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +36,7 @@
                         </li>
                          
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sobre</a>
                         </li>
                     </ul>
                 </div>
